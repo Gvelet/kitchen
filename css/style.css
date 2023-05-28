@@ -4,10 +4,32 @@
   margin: 0 auto;
 }
 
+html,
 body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 400;
+  color: #333;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 * {
@@ -154,7 +176,6 @@ legend {
 }
 .header__bottom-call {
   font-size: 16px;
-  color: #333;
   font-weight: 700;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -173,10 +194,84 @@ legend {
 }
 .menu__link {
   font-weight: 600;
-  color: #333;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .menu__link:hover {
   color: #99CB38;
+}
+
+.consultation {
+  background-color: #262626;
+}
+.consultation-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 47px 0px 59px;
+}
+.consultation-left {
+  max-width: 750px;
+  margin-right: 44px;
+}
+.consultation-title {
+  font-size: 26px;
+  line-height: 34px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.consultation-title span {
+  color: #99CB38;
+}
+.consultation-name, .consultation-number {
+  min-width: 360px;
+  border: 1px solid #B0B0B0;
+  border-radius: 20px;
+  padding: 16px 5px 16px 21px;
+  color: #B0B0B0;
+  font-size: 20px;
+}
+.consultation-name {
+  margin-right: 25px;
+}
+.consultation-desc {
+  margin: 30px 0;
+  width: 100%;
+  border: 1px solid #B0B0B0;
+  border-radius: 20px;
+  padding: 20px 10px 70px 21px;
+  color: #B0B0B0;
+  font-size: 20px;
+  resize: none;
+}
+.consultation-send {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.consultation-btn {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 60px;
+  height: 60px;
+  padding-right: 51px;
+  padding-left: 42px;
+  background: linear-gradient(269.89deg, #FBD846 0.07%, #FFE888 99.89%);
+  -webkit-box-shadow: 5px 8px 5px rgba(248, 204, 85, 0.1);
+          box-shadow: 5px 8px 5px rgba(248, 204, 85, 0.1);
+  border-radius: 30px;
+}
+.consultation-text {
+  max-width: 362px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #B0B0B0;
+}
+.consultation-img {
+  margin-right: -220px;
 }
